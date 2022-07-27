@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <title>CRM - Nuevo cliente</title>
+        <style>
+            .bd-placeholder-img{
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px){
+                .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="bg-light">
+            <nav class="navbar bg-light fixed-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <a class="navbar-brand" href="#">Menú</a>
+                    </button>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-start bg-dark" style="width: 290px;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 text-white">
+                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <span class="fs-4">CRM</span>
+                        </a>
+                        <hr>
+                        <p>Administra tus clientes mediante este CRM</p>
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li>
+                                <a href="index.html" class="nav-link text-white">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                    Clientes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nuevo_cliente.html" class="nav-link text-white">
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                    Nuevo Cliente
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="dropdown" style="margin: 100% 0 25px 25px;">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <strong>Usuario</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Nuevo proyecto</a></li>
+                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="container mt-5">
+                <h1 class="text-center mt-5">Editar cliente</h1>
+                <div class="row">
+                    <div class="col-sm mt-3">
+                        <div class="container col-sm-5 bg-white p-3 rounded-3 shadow">
+                            <form id="form_editar_cliente">
+                                <div class="form-floating mb-3 mt-3 col-sm-12">
+                                    <input name="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre y apellido">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                </div>
+                                <div class="form-floating mb-3 col-sm-12">
+                                    <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                </div>
+                                <div class="form-floating mb-3 col-sm-12">
+                                    <input name="phone" type="tel" class="form-control" id="phone" placeholder="Teléfono">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                </div>
+                                <div class="form-floating mb-3 col-sm-12">
+                                    <input name="empresa" type="text" class="form-control" id="empresa" placeholder="Empresa">
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                </div>
+                                <div class="d-grid gap-2 col-sm-12 mx-auto mb-3">
+                                    <button type="submit" class="btn btn-primary bg-dark py-3">Editar cliente</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="src/js/editar-cliente.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
