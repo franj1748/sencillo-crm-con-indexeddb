@@ -101,28 +101,28 @@ main {
 }
 
 input[name="nombre"]{
-    background-image: url("/src/img/people-circle-outline.svg");
+    background-image: url("src/img/people-circle-outline.svg");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.99em + .99rem) calc(.99em + .99rem);
 }
 
 input[name="email"]{
-    background-image: url("/src/img/mail-open-outline.svg");
+    background-image: url("src/img/mail-open-outline.svg");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.99em + .99rem) calc(.99em + .99rem);
 }
 
 input[name="phone"]{
-    background-image: url("/src/img/phone-portrait-outline.svg");
+    background-image: url("src/img/phone-portrait-outline.svg");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.99em + .99rem) calc(.99em + .99rem);
 }
 
 input[name="empresa"]{
-    background-image: url("/src/img/business-outline.svg");
+    background-image: url("src/img/business-outline.svg");
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.99em + .99rem) calc(.99em + .99rem);
